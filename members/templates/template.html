@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Create a Post </title>
+</head>
+{% include 'first.html' %}
+
+<body>
+<h1>Create a Post </h1>
+<form action="" method="POST">
+{% csrf_token %}
+first name: <input type="text" name="title"/><br/>
+last name:  <input type="text" name="content">
+<br/>
+<input type="submit" value="Post"/>
+</form>
+</body>
+
+</html>
